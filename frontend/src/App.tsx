@@ -1,8 +1,8 @@
-import { Routes, Route } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
-import Homepage from "./pages/Homepage";
 import Art from "./pages/Art";
-import Vehicles from "./pages/Vehicles";
+import Auto from "./pages/Auto";
+import Homepage from "./pages/Homepage";
 import Music from "./pages/Music";
 
 const App = () => {
@@ -11,8 +11,8 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Homepage />} />
+        <Route path="/auto" element={<Auto />} />
         <Route path="/art" element={<Art />} />
-        <Route path="/vehicles" element={<Vehicles />} />
         <Route path="/music" element={<Music />} />
       </Routes>
     </>
